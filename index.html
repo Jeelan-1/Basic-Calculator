@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container ">
+        <div contenteditable="true" oninput="filterInput()" class="screen"></div>
+        <div class="buttons">
+            <div id="prev" style="color: green;" class="val poppins-black1">prev</div>
+            <div id="c" style="color: red;" class="val poppins-black1">clear</div>
+            <div id="bsc" style="color: black;" class="val poppins-black1">⌫</div>
+            <div id="/" style="color: rgb(12, 74, 244);" class="val poppins-black1 poppins-black1">÷</div>
+            <div id="7" class="val">7</div>
+            <div id="8" class="val">8</div>
+            <div id="9" class="val">9</div>
+            <div id="*"  style="color: rgb(12, 74, 244);"class="val poppins-black1">×</div>
+            <div id="4" class="val">4</div>
+            <div id="5" class="val">5</div>
+            <div id="6" class="val">6</div>
+            <div id="-" class="val poppins-black1" style="color: rgb(12, 74, 244);">−</div>
+            <div id="1" class="val">1</div>
+            <div id="2" class="val">2</div>
+            <div id="3" class="val">3</div>
+            <div id="+" class="val poppins-black1" style="color: rgb(12, 74, 244);">+</div>
+            <div id="neg" class="val poppins-black1" style="color: rgb(12, 74, 244);">﹢/ - </div>
+            <div id="0" class="val">0</div>
+            <div id="." class="val poppins-black1" style="color: rgb(12, 74, 244);">.</div>
+            <div id="=" style="font-weight: 700; color: rgb(255, 6, 238) ;" class="val poppins-black1" onkeydown="handleEnter(event)">=</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
